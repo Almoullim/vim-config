@@ -1,14 +1,9 @@
-# Rafael Bodill's Neovim Config
+# Almoullim Neovim Config
 
-Lean mean Neovim machine, 30-45ms startup time.
+Lean mean Neovim machine.
 
 Works best with [Neovim] ≥0.5 ⚠️ For Vim 8.x, use the
 [`vim` git tag](https://github.com/rafi/vim-config/tree/vim).
-
-> I encourage you to fork this repo and create your own experience.
-> Learn how to tweak and change Neovim to the way YOU like it.
-> This is my cultivation of years of tweaking, use it as a git remote
-> and stay in-touch with upstream for reference or cherry-picking.
 
 <details>
   <summary>
@@ -60,24 +55,6 @@ Works best with [Neovim] ≥0.5 ⚠️ For Vim 8.x, use the
 <!-- vim-markdown-toc -->
 </details>
 
-## Features
-
-* Fast startup time
-* Robust, yet light-weight
-* Lazy-load 95% of plugins with [Shougo/dein.vim]
-* LSP installers (`:LspInstall <server>`)
-* Custom side-menu (try it! <kbd>Space</kbd>+<kbd>l</kbd>)
-* Custom context-menu (try it! <kbd>;</kbd>+<kbd>c</kbd>)
-* Auto-complete extensive setup with [nvim-lspconfig] and [nvim-cmp]
-  (try <kbd>Tab</kbd> in insert-mode)
-* [telescope.nvim] centric work-flow with lists (try <kbd>;</kbd>+<kbd>f</kbd>…)
-* Structure view with [simrat39/symbols-outline.nvim]
-* Git features using [lambdalisue/gina.vim] and [lewis6991/gitsigns.nvim]
-* Auto-save and restore sessions with [rmagatti/auto-session].
-* Light-weight but informative status & tab lines
-* Easy customizable theme
-* Premium color-schemes
-
 ## Screenshot
 
 ![Vim screenshot](http://rafi.io/static/img/project/vim-config/features.png)
@@ -88,8 +65,8 @@ Works best with [Neovim] ≥0.5 ⚠️ For Vim 8.x, use the
   (`brew install neovim`) ≥ v0.5.0
 * Plugins are parsed [from YAML](./config/plugins.yaml) and cached.
   Ensure **one** of these tools is installed:
-  * [yj](https://github.com/sclevine/yj) (`brew install yj`)
-  * [yq](https://github.com/mikefarah/yq) (`brew install yq`)
+  * [yj](https://github.com/sclevine/yj) 
+  * [yq](https://github.com/mikefarah/yq) 
   * [yaml2json](https://github.com/bronze1man/yaml2json)
   * Ruby
   * Python with PyYAML (`pip install PyYAML`)
@@ -151,18 +128,6 @@ This will run `git pull --ff --ff-only` and update all plugins using
 * [Pragmata Pro] (€19 – €1,990): My preferred font
 * Any of the [Nerd Fonts]
 
-On macOS with Homebrew, choose one of the [Nerd Fonts],
-for example, here are some popular fonts:
-
-```sh
-brew tap homebrew/cask-fonts
-brew search nerd-font
-brew install --cask font-victor-mono-nerd-font
-brew install --cask font-iosevka-nerd-font-mono
-brew install --cask font-hack-nerd-font
-brew install --cask font-fira-code
-```
-
 [Pragmata Pro]: https://www.fsd.it/shop/fonts/pragmatapro/
 [Nerd Fonts]: https://www.nerdfonts.com
 
@@ -190,13 +155,11 @@ pip3 install --user pycodestyle pyflakes flake8
 ### Recommended Tools
 
 * **ripgrep**: [BurntSushi/ripgrep](https://github.com/BurntSushi/ripgrep)
-  (macOS: `brew install rg`)
 * Jump around with **zoxide**: [ajeetdsouza/zoxide](https://github.com/ajeetdsouza/zoxide)
-  (macOS: `brew install zoxide`)
 * Fuzzy file finders:
   **[fzf](https://github.com/junegunn/fzf)**, or
   **[fzy](https://github.com/jhawthorn/fzy)**,
-  (macOS: `brew install fzf`)
+
 
 ## User Custom Config
 
